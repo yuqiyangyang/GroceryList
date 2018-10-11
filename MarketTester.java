@@ -19,13 +19,9 @@ public class MarketTester {
 		System.out.println(Yegg.equals(Yegg1));
 		
 		System.out.println("--------Testing Customer Class--------");
-		//yuqi added
 		Customer cust1 = new Customer("yuqi", 10000);
-		//System.out.println(cust1.getName());
-		//System.out.println(cust1.getBasket().printToCents(cust1.getBalance()));
+		System.out.println(cust1.getName());
 		cust1.addFunds(50);
-		//System.out.println(cust1.getBasket().printToCents(cust1.getBalance()));
-		//System.out.println(cust1.getBasket());//did not return anything
 		cust1.addToBasket(new Fruit("orange_bb", 12, 22));
 		cust1.addToBasket(new SeasonalFruit("grapeorange", 22, 3));
 		cust1.addToBasket(new Egg("big Eggs", 9, 55));
@@ -35,15 +31,12 @@ public class MarketTester {
 		System.out.println(cust1.removeFromBasket(new Fruit("orange_bb", 12, 22)));
 		cust1.addToBasket(new Fruit("orange", 12, 2));
 		System.out.println(cust1.getBasket().toString());
-		//System.out.println(cust1.getBasket().getNumOfProducts());
-		//cust1.checkOut();
+		System.out.println(cust1.getBasket().getNumOfProducts());
+		cust1.checkOut();
 		System.out.println(cust1.getBasket().getNumOfProducts());
 		System.out.println(cust1.checkOut());
 		System.out.println(cust1.getBasket().getNumOfProducts());
-		//System.out.println(cust1.getBasket().getBalance());
-		
-		
-		
+		System.out.println(cust1.getBasket().getBalance());
 	
 		try{
 			Egg fancyEggs = new Egg("Fancy Eggs", 4, 380);
@@ -96,8 +89,6 @@ public class MarketTester {
 				System.out.println("--- FAILED Test for Basket remove ----");
 				System.out.println("Expected: a=true & b=false");
 				System.out.println("Obtained: a=" + a + " & b=" + b);
-
-
 			}else{
 				System.out.println("---Passed test  for Basket remove");
 			}
@@ -109,8 +100,6 @@ public class MarketTester {
 			System.out.println("---FAILED Test for Basket ----");
 			stackTrace(e);
 		}
-
-		
 		try{
 			Customer cust  = new Customer("Alice",10000);
 				            System.out.println(cust.getName());
