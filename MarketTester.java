@@ -102,10 +102,10 @@ public class MarketTester {
 		}
 		try{
 			Customer cust  = new Customer("Alice",10000);
-				            System.out.println(cust.getName());
-				            System.out.println(cust.getBalance());
-			//cust.addFunds(10);
-			//cust.addFunds(-10);
+			System.out.println(cust.getName());
+			System.out.println(cust.getBalance());
+			cust.addFunds(10);
+			cust.addFunds(-10);
 			cust.addToBasket(new Egg("organic Eggs",5,380));
 			cust.addToBasket(new Fruit("Blue Berry",1.5,380));
 			cust.addToBasket(new Fruit("Red Berry",1.5,38));
