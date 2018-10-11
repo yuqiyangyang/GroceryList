@@ -1,4 +1,3 @@
-//Yuqi Yang 260365378
 
 public class Fruit extends MarketProduct{
 	

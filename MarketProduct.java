@@ -1,4 +1,4 @@
-//Yuqi Yang 260365378
+
 
 public abstract class MarketProduct {
 	private String name;
@@ -13,7 +13,5 @@ public abstract class MarketProduct {
 	
 	public abstract int getCost();//abstract class does not have implement
 	
-	public abstract boolean equals(Object o);
-		
-
+	public abstract boolean equals(Object o);		
 }

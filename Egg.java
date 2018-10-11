@@ -1,4 +1,4 @@
-//Yuqi Yang 260365378
+
 
 public class Egg extends MarketProduct{
 	
